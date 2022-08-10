@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.distancematrix.ai/maps/api/distancematrix/json?destinations=London&key=JwaD0Kf818SwsmG2EXYYn86tMloBo&origins=Krasnodar&transit_mode=bus
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.distancematrix.ai
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 15 Aug 2022 09:51:57 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - OPTIONS, GET
+      Access-Control-Allow-Headers:
+      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Max-Age:
+      - '1728000'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=%2FCuGC6StX7C2aZmo6Fp0%2BeYx2%2FhxO%2B56om7mdKeBNNgHFQCl6AfBzko5AJTkkDJrZpS7PGk%2FyZGxlm%2Bd6Y3%2FDgw4AoDdhJiyboFgC%2BajZ0PUWlUjSoGlGgH5BByAoUPoKBGdb53T%2BOQ%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 73b108c6a8dd77f5-VIE
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"destination_addresses":["London, United Kingdom"],"origin_addresses":["Krasnodar,
+        Krasnodar Krai, Russia"],"rows":[{"elements":[{"distance":{"text":"3621.6
+        km","value":3621557},"duration":{"text":"1 day 18 hour 2 mins","value":151353},"status":"OK"}]}],"status":"OK"}'
+  recorded_at: Mon, 15 Aug 2022 09:51:57 GMT
+recorded_with: VCR 6.1.0

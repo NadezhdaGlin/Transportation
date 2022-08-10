@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.distancematrix.ai/maps/api/distancematrix/json?destinations=Anapa&key=JwaD0Kf818SwsmG2EXYYn86tMloBo&origins=Moscow&transit_mode=bus
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.distancematrix.ai
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 12 Aug 2022 13:59:47 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - OPTIONS, GET
+      Access-Control-Allow-Headers:
+      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Max-Age:
+      - '1728000'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=q9%2BKGOOuBtA%2F1ipko%2BO1QeCDFhSjbDCiErDoKKEL6FiDhk8tgNocftE8mO68FEa9Qq0iZOH43Sp7M5QlAqHsTt33hMZfvkNU6bVbbyuTn%2By8PLf%2BOv%2BtKzzSGx0tiLNVU6eiZl4v7RI%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 7399bbbc3c49c2c5-VIE
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"destination_addresses":["Anapa, Krasnodar Krai, Russia"],"origin_addresses":["Moscow,
+        Russia"],"rows":[{"elements":[{"distance":{"text":"1474.2 km","value":1474227},"duration":{"text":"17
+        hour 38 mins","value":63510},"status":"OK"}]}],"status":"OK"}'
+  recorded_at: Fri, 12 Aug 2022 13:59:47 GMT
+recorded_with: VCR 6.1.0
